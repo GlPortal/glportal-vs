@@ -1,0 +1,21 @@
+[submodule "glportal"]
+	path = glportal
+	url = https://github.com/GlPortal/glportal
+[submodule "bullet3"]
+	path = bullet3
+	url = https://github.com/bulletphysics/bullet3
+[submodule "assimp"]
+	path = assimp
+	url = https://github.com/assimp/assimp
+[submodule "tinyxml2"]
+	path = tinyxml2
+	url = https://github.com/leethomason/tinyxml2
+[submodule "FreeImage"]
+	path = FreeImage
+	url = https://github.com/kungfooman/FreeImage
+[submodule "SDL2_mixer"]
+	path = SDL2_mixer
+	url = https://github.com/kungfooman/SDL2_mixer
+[submodule "SDL2"]
+	path = SDL2
+	url = https://github.com/kungfooman/SDL2

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{18e192e5-66d8-45b3-b0f4-9adddd87a09b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trigger">
+      <UniqueIdentifier>{64244d16-05e3-440f-9a83-19077626fc91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\glportal\source\Editor.cpp" />
+    <ClCompile Include="..\..\glportal\source\Game.cpp" />
+    <ClCompile Include="..\..\glportal\source\GameController.cpp" />
+    <ClCompile Include="..\..\glportal\source\GameState.cpp" />
+    <ClCompile Include="..\..\glportal\source\Main.cpp" />
+    <ClCompile Include="..\..\glportal\source\Portal.cpp" />
+    <ClCompile Include="..\..\glportal\source\World.cpp" />
+    <ClCompile Include="..\..\glportal\source\WorldHelper.cpp" />
+    <ClCompile Include="..\..\glportal\source\renderer\GameRenderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\renderer\TerminalRenderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\renderer\UiRenderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\trigger\PortalTeleport.cpp">
+      <Filter>trigger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\glportal\source\Version.hpp" />
+  </ItemGroup>
+</Project>

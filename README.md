@@ -1,11 +1,19 @@
 *glPortal for Visual Studio 2017*
 
 
-Just as reminder, if you are about to regenerate the solution by hand:
+Of course this can be improved, its like the first draft. But it's quite easy now to built it, just still somewhat annoying to use cmake-gui for nearly every dependency and drag/drop it on Visual Studio to build it, then copy dll's, fix the /MTT setting for the 3 Bullet projects.
 
-Since Visual Studio doesn't support same file names in subfolders, we have to fix it manually in the solution:
+I have too little CMake experience so far, probably it can be all simplified and configured with one CMake script, so nearly no user interaction is needed anymore... I don't know yet.
 
-Right-click on RadixEngine/source/simulation/Player.cpp
+Probably gonna improve it over the next days and make a simple YouTube video on how to build it from A to Z.
+
+Since every dependency is build in "Debug" mode, the game can barely reach 20 fps so far. Didn't configured it for Release yet.
+
+If anybody wants to test already, have fun
+
+
+Just as reminder, if you are about to regenerate the solution by hand: since Visual Studio doesn't support same file names in subfolders, we have to fix it manually in the solution:
+ - Right-click on RadixEngine/source/simulation/Player.cpp
  - C/C++ -> output files -> object file name: set it to: $(IntDir)simulation\
 
  

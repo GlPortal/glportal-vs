@@ -1,7 +1,10 @@
 *glPortal for Visual Studio 2017*
 
+Complete compilation of everything: https://www.youtube.com/watch?v=uG2y1zHDk-k&feature=youtu.be
 
-Of course this can be improved, its like the first draft. But it's quite easy now to built it, just still somewhat annoying to use cmake-gui for nearly every dependency and drag/drop it on Visual Studio to build it, then copy dll's, fix the /MTT setting for the 3 Bullet projects.
+Spoiler: make sure to set each VS solution to Debug/x64 before compiling :^)
+
+Of course this can be improved, its like the first draft. But it's quite easy now to build it, just still somewhat annoying to use cmake-gui for nearly every dependency and drag/drop it on Visual Studio to build it, then copy dll's, fix the /MTT setting for the 3 Bullet projects.
 
 I have too little CMake experience so far, probably it can be all simplified and configured with one CMake script, so nearly no user interaction is needed anymore... I don't know yet.
 

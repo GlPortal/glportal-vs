@@ -9,7 +9,7 @@
 	url = https://github.com/assimp/assimp
 [submodule "tinyxml2"]
 	path = tinyxml2
-	url = https://github.com/leethomason/tinyxml2
+	url = https://github.com/kungfooman/tinyxml2
 [submodule "FreeImage"]
 	path = FreeImage
 	url = https://github.com/kungfooman/FreeImage

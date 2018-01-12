@@ -1,6 +1,6 @@
 # GlPortal for Visual Studio 2017
 
-Complete compilation of everything: https://www.youtube.com/watch?v=uG2y1zHDk-k&feature=youtu.be
+[Video guide of compilation in Visual Studio](https://www.youtube.com/watch?v=uG2y1zHDk-k&feature=youtu.be)
 
     Spoiler: make sure to set each VS solution to Debug/x64 before compiling :^)
 

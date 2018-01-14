@@ -1,6 +1,7 @@
 # GlPortal for Visual Studio 2017
+Are you on another platform or do you want to use mingw for building then have a look at how to [build GlPortal on Mac or Linux](https://github.com/GlPortal/glPortal/blob/master/COMPILE.md).
 
-[Video guide of compilation in Visual Studio](https://www.youtube.com/watch?v=uG2y1zHDk-k&feature=youtu.be)
+To see these instructions in action look at the [video guide](https://www.youtube.com/watch?v=uG2y1zHDk-k&feature=youtu.be).
 
     Make sure to set each VS solution to Debug/x64 before compiling
 

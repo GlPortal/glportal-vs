@@ -30,7 +30,3 @@ Not automatic yet: once everything is built, copy these dlls into VS2017\GlPorta
 	SDL2_mixer\VisualC\external\lib\x64\libvorbisfile-3.dll
 	SDL2_mixer\VisualC\x64\Debug\SDL2_mixer.dll
 	tinyxml2\build\Debug\tinyxml2d.dll
-
-## Todo:
- - Ground work is done and proven to be working, slowly swap stuff out to be done by CMake
- - Currently only the Debug configurations are configured, repeat it with Release configurations... or rather generate Solution now via CMake

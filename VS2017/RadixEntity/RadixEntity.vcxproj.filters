@@ -1,40 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\iotypes\ValueType.cpp">
+      <Filter>iotypes</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\Entity.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\Method.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\Property.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\Signal.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\external\RadixEntity\src\iotypes\ValueType.cpp">
-      <Filter>iotypes</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="iotypes">
       <UniqueIdentifier>{223bab6c-cc58-4c8b-b780-744a61fc6fbb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="util">
-      <UniqueIdentifier>{f3d60df7-eac7-4686-b95b-d0e2f2e6d025}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\Entity.hpp" />
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\Method.hpp" />
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\Property.hpp" />
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\Signal.hpp" />
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\iotypes\ValueHint.hpp">
-      <Filter>iotypes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\iotypes\ValueType.hpp">
-      <Filter>iotypes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\util\ParamTypes.hpp">
-      <Filter>util</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\glportal\external\RadixEngine\external\RadixEntity\include\RadixEntity\util\easy_bind">
-      <Filter>util</Filter>
-    </None>
   </ItemGroup>
 </Project>

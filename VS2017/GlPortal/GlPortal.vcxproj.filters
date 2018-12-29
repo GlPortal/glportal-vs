@@ -1,22 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="glportal">
+      <UniqueIdentifier>{68f1b887-cbb3-4f20-beff-ccf7b3981bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{f1a1e6ba-f5d3-4344-beb5-b3493fabd569}</UniqueIdentifier>
+    </Filter>
     <Filter Include="renderer">
-      <UniqueIdentifier>{18e192e5-66d8-45b3-b0f4-9adddd87a09b}</UniqueIdentifier>
+      <UniqueIdentifier>{6b9b4e19-e988-46c6-b4b6-9bbb279d5f74}</UniqueIdentifier>
     </Filter>
     <Filter Include="trigger">
-      <UniqueIdentifier>{64244d16-05e3-440f-9a83-19077626fc91}</UniqueIdentifier>
+      <UniqueIdentifier>{47358e6e-c129-4695-a4f3-24cc1c9f4df8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\glportal\source\Editor.cpp" />
-    <ClCompile Include="..\..\glportal\source\Game.cpp" />
-    <ClCompile Include="..\..\glportal\source\GameController.cpp" />
-    <ClCompile Include="..\..\glportal\source\GameState.cpp" />
-    <ClCompile Include="..\..\glportal\source\Main.cpp" />
-    <ClCompile Include="..\..\glportal\source\Portal.cpp" />
-    <ClCompile Include="..\..\glportal\source\World.cpp" />
-    <ClCompile Include="..\..\glportal\source\WorldHelper.cpp" />
+    <ClCompile Include="..\..\glportal\source\Editor.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\Game.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\GameController.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\Main.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\Portal.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\World.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\WorldHelper.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\input\InputManager.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\glportal\source\renderer\GameRenderer.cpp">
       <Filter>renderer</Filter>
     </ClCompile>
@@ -31,6 +53,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\glportal\source\Version.hpp" />
+    <ClInclude Include="..\..\glportal\source\Version.hpp">
+      <Filter>glportal</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

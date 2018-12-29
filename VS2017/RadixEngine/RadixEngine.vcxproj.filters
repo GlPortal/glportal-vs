@@ -82,6 +82,9 @@
     <Filter Include="external\glad">
       <UniqueIdentifier>{e14c2151-9d3a-4483-9385-a5149c398a5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{eaa2c31e-08b8-4102-baa5-1c685d57735d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\diag\AnsiConsoleLogger.cpp">
@@ -101,18 +104,6 @@
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\file\Path.cpp">
       <Filter>core\file</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\DebugOutput.cpp">
-      <Filter>core\gl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\OpenGL.cpp">
-      <Filter>core\gl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\TightDataPacker.cpp">
-      <Filter>core\gl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\VBO.cpp">
-      <Filter>core\gl</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Math.cpp">
       <Filter>core\math</Filter>
@@ -134,9 +125,6 @@
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector4f.cpp">
       <Filter>core\math</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\state\GameState.cpp">
-      <Filter>core\state</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\AudioTrigger.cpp">
       <Filter>data\map</Filter>
@@ -216,27 +204,6 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\entities\traits\Trait.cpp">
       <Filter>entities\traits</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\ArgumentsParser.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Config.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Environment.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\GameConsole.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\OperatingSystem.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Util.cpp">
-      <Filter>env</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputSource.cpp">
-      <Filter>input</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\physics\CollisionDispatcher.cpp">
       <Filter>physics</Filter>
     </ClCompile>
@@ -304,6 +271,66 @@
       <Filter>simulation</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Entity.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\PlayerApi.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\RadixApi.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\ScriptEngine.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\DebugOutput.cpp">
+      <Filter>core\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\Framebuffer.cpp">
+      <Filter>core\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\OpenGL.cpp">
+      <Filter>core\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\TightDataPacker.cpp">
+      <Filter>core\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\VBO.cpp">
+      <Filter>core\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\state\GameStateManager.cpp">
+      <Filter>core\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\ScriptTrigger.cpp">
+      <Filter>data\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\ArgumentsParser.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Config.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\GameConsole.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\LegacyEnvironment.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\OperatingSystem.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Util.cpp">
+      <Filter>env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\Channel.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\ChannelBase.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputManager.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputSource.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\glportal\external\RadixEngine\external\glad\glad.h">

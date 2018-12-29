@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\glad\glad.c" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\json11\json11.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\PlayerApi.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\RadixApi.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\ScriptEngine.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\BaseGame.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Camera.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\diag\AnsiConsoleLogger.cpp" />
@@ -30,6 +33,7 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\event\EventDispatcher.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\file\Path.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\DebugOutput.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\Framebuffer.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\OpenGL.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\TightDataPacker.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\gl\VBO.cpp" />
@@ -40,13 +44,14 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector2ui.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector3f.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector4f.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\state\GameState.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\state\GameStateManager.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\AudioTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\DeathTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\MapListLoader.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\MapLoader.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\MapTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\RadiationTrigger.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\ScriptTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\TeleportTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\WinTrigger.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\data\map\XmlHelper.cpp" />
@@ -74,11 +79,14 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\EntityManager.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\ArgumentsParser.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Config.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Environment.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\GameConsole.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\LegacyEnvironment.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\OperatingSystem.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\env\Util.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\GameWorld.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\Channel.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\ChannelBase.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputManager.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputSource.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\physics\CollisionDispatcher.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\physics\GhostPairCallback.cpp" />
@@ -113,7 +121,7 @@
     <ProjectGuid>{FBA286FB-ECEE-4791-ACA9-DF2EF59D2F88}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>RadixEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -172,6 +180,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\glportal\include;$(SolutionDir)..\..\glportal\external\RadixEngine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\stx\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\RadixEntity\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\easy_profiler\easy_profiler_core\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\linenoise;$(SolutionDir)..\..\glportal\external\RadixEngine\external\serine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external;$(SolutionDir)..\..\bullet3\src;$(SolutionDir)..\..\bullet3;$(SolutionDir)..\..\bullet3\bullet;$(SolutionDir)..\..\tinyxml2;$(SolutionDir)..\..\SDL2\include;$(SolutionDir)..\..\SDL2\include\SDL2;$(SolutionDir)..\..\;$(SolutionDir)..\..\getopt;$(SolutionDir)..\..\FreeImage\Source;$(SolutionDir)..\..\FreeImage\Wrapper\FreeImagePlus;$(SolutionDir)..\..\assimp\include;$(SolutionDir)..\..\assimp\build\include;$(SolutionDir)..\..\fakeincludes;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\include;$(SolutionDir)..\..\angelscript_2.33.0\add_on;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -219,13 +228,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;RADIX_GL_USE_GLAD;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

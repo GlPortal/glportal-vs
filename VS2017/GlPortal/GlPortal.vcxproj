@@ -22,13 +22,11 @@
     <ClCompile Include="..\..\glportal\source\Editor.cpp" />
     <ClCompile Include="..\..\glportal\source\Game.cpp" />
     <ClCompile Include="..\..\glportal\source\GameController.cpp" />
-    <ClCompile Include="..\..\glportal\source\GameState.cpp" />
+    <ClCompile Include="..\..\glportal\source\input\InputManager.cpp" />
     <ClCompile Include="..\..\glportal\source\Main.cpp" />
     <ClCompile Include="..\..\glportal\source\Portal.cpp" />
     <ClCompile Include="..\..\glportal\source\renderer\GameRenderer.cpp" />
-    <ClCompile Include="..\..\glportal\source\renderer\TerminalRenderer.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\glportal\source\renderer\TerminalRenderer.cpp" />
     <ClCompile Include="..\..\glportal\source\renderer\UiRenderer.cpp" />
     <ClCompile Include="..\..\glportal\source\trigger\PortalTeleport.cpp" />
     <ClCompile Include="..\..\glportal\source\World.cpp" />
@@ -42,8 +40,8 @@
     <ProjectGuid>{45125109-5DFB-4F50-A2F2-605D10809969}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>GlPortal</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>glportal</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,6 +100,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\glportal\include;$(SolutionDir)..\..\glportal\external\RadixEngine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\stx\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\RadixEntity\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\easy_profiler\easy_profiler_core\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\linenoise;$(SolutionDir)..\..\glportal\external\RadixEngine\external\serine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external;$(SolutionDir)..\..\bullet3\src;$(SolutionDir)..\..\bullet3;$(SolutionDir)..\..\bullet3\bullet;$(SolutionDir)..\..\tinyxml2;$(SolutionDir)..\..\SDL2\include;$(SolutionDir)..\..;$(SolutionDir)..\..\fakeincludes;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\include;$(UniversalCRT_IncludePath);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -118,7 +117,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);RADIX_GL_USE_GLAD</PreprocessorDefinitions>
@@ -150,13 +148,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);RADIX_GL_USE_GLAD</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

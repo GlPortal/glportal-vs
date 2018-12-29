@@ -41,6 +41,7 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Matrix3f.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Matrix4f.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector2f.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector2i.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector2ui.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector3f.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector4f.cpp" />
@@ -101,7 +102,7 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\renderer\TextRenderer.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\SimulationManager.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\simulation\Physics.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\simulation\Player.cpp">
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\simulation\SimulationPlayer.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)simulation\</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\SoundManager.cpp" />
@@ -110,7 +111,7 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\util\sdl\Fps.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\util\XmlLoader.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Window.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\World.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\EngineWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\glportal\external\RadixEngine\external\glad\glad.h" />

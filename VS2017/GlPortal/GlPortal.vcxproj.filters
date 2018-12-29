@@ -13,6 +13,21 @@
     <Filter Include="trigger">
       <UniqueIdentifier>{47358e6e-c129-4695-a4f3-24cc1c9f4df8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="angelscript">
+      <UniqueIdentifier>{49cb1dd3-d6c4-439f-9c2a-70acc09b6e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="angelscript\addon_scriptstdstring">
+      <UniqueIdentifier>{fce1d710-73c3-492b-8fe8-f41fa4e6c1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="angelscript\addon_scripthandle">
+      <UniqueIdentifier>{ca806038-255d-409b-9a52-05426f6755ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="angelscript\addon_weakref">
+      <UniqueIdentifier>{fffd403c-1ae7-4231-b904-f09f2f883f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="angelscript\addon_scriptarray">
+      <UniqueIdentifier>{d5f02d9b-9249-463b-98ef-acd0b0c65b71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glportal\source\Editor.cpp">
@@ -28,9 +43,6 @@
       <Filter>glportal</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\source\Portal.cpp">
-      <Filter>glportal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\source\World.cpp">
       <Filter>glportal</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\source\WorldHelper.cpp">
@@ -51,10 +63,40 @@
     <ClCompile Include="..\..\glportal\source\trigger\PortalTeleport.cpp">
       <Filter>trigger</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\glportal\source\PortalWorld.cpp">
+      <Filter>glportal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring.cpp">
+      <Filter>angelscript\addon_scriptstdstring</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring_utils.cpp">
+      <Filter>angelscript\addon_scriptstdstring</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scripthandle\scripthandle.cpp">
+      <Filter>angelscript\addon_scripthandle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\weakref\weakref.cpp">
+      <Filter>angelscript\addon_weakref</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.cpp">
+      <Filter>angelscript\addon_scriptarray</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\glportal\source\Version.hpp">
       <Filter>glportal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring.h">
+      <Filter>angelscript\addon_scriptstdstring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scripthandle\scripthandle.h">
+      <Filter>angelscript\addon_scripthandle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\weakref\weakref.h">
+      <Filter>angelscript\addon_weakref</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.h">
+      <Filter>angelscript\addon_scriptarray</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -19,6 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.cpp" />
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scripthandle\scripthandle.cpp" />
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring.cpp" />
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring_utils.cpp" />
+    <ClCompile Include="..\..\angelscript_2.33.0\add_on\weakref\weakref.cpp" />
     <ClCompile Include="..\..\glportal\source\Editor.cpp" />
     <ClCompile Include="..\..\glportal\source\Game.cpp" />
     <ClCompile Include="..\..\glportal\source\GameController.cpp" />
@@ -31,10 +36,14 @@
     </ClCompile>
     <ClCompile Include="..\..\glportal\source\renderer\UiRenderer.cpp" />
     <ClCompile Include="..\..\glportal\source\trigger\PortalTeleport.cpp" />
-    <ClCompile Include="..\..\glportal\source\World.cpp" />
+    <ClCompile Include="..\..\glportal\source\PortalWorld.cpp" />
     <ClCompile Include="..\..\glportal\source\WorldHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.h" />
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scripthandle\scripthandle.h" />
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\scriptstdstring\scriptstdstring.h" />
+    <ClInclude Include="..\..\angelscript_2.33.0\add_on\weakref\weakref.h" />
     <ClInclude Include="..\..\glportal\source\Version.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -163,7 +172,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEngine.lib;$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEntity.lib;$(SolutionDir)..\..\assimp\build_64bit\code\RelWithDebInfo\assimp-vc140-mt.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletCollision_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletDynamics_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;$(SolutionDir)..\..\FreeImage\Dist\x64\FreeImage.lib;$(SolutionDir)..\..\tinyxml2\build_64bit\RelWithDebInfo\tinyxml2.lib;$(SolutionDir)..\..\SDL2\VisualC\x64\Release\SDL2.lib;$(SolutionDir)..\..\SDL2_mixer\VisualC\x64\Release\SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEngine.lib;$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEntity.lib;$(SolutionDir)..\..\assimp\build_64bit\code\RelWithDebInfo\assimp-vc140-mt.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletCollision_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletDynamics_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;$(SolutionDir)..\..\FreeImage\Dist\x64\FreeImage.lib;$(SolutionDir)..\..\tinyxml2\build_64bit\RelWithDebInfo\tinyxml2.lib;$(SolutionDir)..\..\SDL2\VisualC\x64\Release\SDL2.lib;$(SolutionDir)..\..\SDL2_mixer\VisualC\x64\Release\SDL2_mixer.lib;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\lib\angelscript64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

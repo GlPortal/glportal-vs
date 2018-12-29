@@ -257,7 +257,6 @@
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\SoundManager.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Transform.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Window.cpp" />
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\World.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\external\glad\glad.c">
       <Filter>external\glad</Filter>
     </ClCompile>
@@ -266,9 +265,6 @@
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\entities\Player.cpp">
       <Filter>entities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\glportal\external\RadixEngine\source\simulation\Player.cpp">
-      <Filter>simulation</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\Entity.cpp" />
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\api\PlayerApi.cpp">
@@ -330,6 +326,13 @@
     </ClCompile>
     <ClCompile Include="..\..\glportal\external\RadixEngine\source\input\InputSource.cpp">
       <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\simulation\SimulationPlayer.cpp">
+      <Filter>simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\EngineWorld.cpp" />
+    <ClCompile Include="..\..\glportal\external\RadixEngine\source\core\math\Vector2i.cpp">
+      <Filter>core\math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

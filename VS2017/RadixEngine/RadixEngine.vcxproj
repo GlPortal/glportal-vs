@@ -144,7 +144,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -180,7 +180,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)..\..\glportal\include;$(SolutionDir)..\..\glportal\external\RadixEngine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\stx\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\RadixEntity\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\easy_profiler\easy_profiler_core\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\linenoise;$(SolutionDir)..\..\glportal\external\RadixEngine\external\serine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external;$(SolutionDir)..\..\bullet3\src;$(SolutionDir)..\..\bullet3;$(SolutionDir)..\..\bullet3\bullet;$(SolutionDir)..\..\tinyxml2;$(SolutionDir)..\..\SDL2\include;$(SolutionDir)..\..\SDL2\include\SDL2;$(SolutionDir)..\..\;$(SolutionDir)..\..\getopt;$(SolutionDir)..\..\FreeImage\Source;$(SolutionDir)..\..\FreeImage\Wrapper\FreeImagePlus;$(SolutionDir)..\..\assimp\include;$(SolutionDir)..\..\assimp\build\include;$(SolutionDir)..\..\fakeincludes;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\include;$(SolutionDir)..\..\angelscript_2.33.0\add_on;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\glportal\include;$(SolutionDir)..\..\glportal\external\RadixEngine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\stx\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\RadixEntity\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\easy_profiler\easy_profiler_core\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external\linenoise;$(SolutionDir)..\..\glportal\external\RadixEngine\external\serine\include;$(SolutionDir)..\..\glportal\external\RadixEngine\external;$(SolutionDir)..\..\bullet3\src;$(SolutionDir)..\..\bullet3;$(SolutionDir)..\..\bullet3\bullet;$(SolutionDir)..\..\tinyxml2;$(SolutionDir)..\..\SDL2\include;$(SolutionDir)..\..\SDL2\include\SDL2;$(SolutionDir)..\..\;$(SolutionDir)..\..\getopt;$(SolutionDir)..\..\FreeImage\Source;$(SolutionDir)..\..\FreeImage\Wrapper\FreeImagePlus;$(SolutionDir)..\..\assimp\include;$(SolutionDir)..\..\assimp\build_64bit\include;$(SolutionDir)..\..\fakeincludes;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\include;$(SolutionDir)..\..\angelscript_2.33.0\add_on;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -232,7 +232,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;RADIX_GL_USE_GLAD;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;RADIX_GL_USE_GLAD;_CRT_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>

@@ -28,6 +28,9 @@
     <Filter Include="angelscript\addon_scriptarray">
       <UniqueIdentifier>{d5f02d9b-9249-463b-98ef-acd0b0c65b71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="tinyxml2">
+      <UniqueIdentifier>{a0821811-8d31-464c-8313-fcbc28053b06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glportal\source\Editor.cpp">
@@ -81,6 +84,9 @@
     <ClCompile Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.cpp">
       <Filter>angelscript\addon_scriptarray</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\tinyxml2\tinyxml2.cpp">
+      <Filter>tinyxml2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\glportal\source\Version.hpp">
@@ -97,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="..\..\angelscript_2.33.0\add_on\scriptarray\scriptarray.h">
       <Filter>angelscript\addon_scriptarray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tinyxml2\tinyxml2.h">
+      <Filter>tinyxml2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

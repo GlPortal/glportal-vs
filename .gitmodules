@@ -1,9 +1,6 @@
 [submodule "glportal"]
 	path = glportal
 	url = https://github.com/GlPortal/glportal
-[submodule "bullet3"]
-	path = bullet3
-	url = https://github.com/bulletphysics/bullet3
 [submodule "assimp"]
 	path = assimp
 	url = https://github.com/assimp/assimp

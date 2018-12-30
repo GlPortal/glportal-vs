@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="TaskScheduler">
+      <UniqueIdentifier>{c9601b4e-2264-44c0-9614-8014b727bdde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\LinearMath\btAabbUtil2.h" />
+    <ClInclude Include="..\..\..\LinearMath\btAlignedAllocator.h" />
+    <ClInclude Include="..\..\..\LinearMath\btAlignedObjectArray.h" />
+    <ClInclude Include="..\..\..\LinearMath\btConvexHull.h" />
+    <ClInclude Include="..\..\..\LinearMath\btConvexHullComputer.h" />
+    <ClInclude Include="..\..\..\LinearMath\btCpuFeatureUtility.h" />
+    <ClInclude Include="..\..\..\LinearMath\btDefaultMotionState.h" />
+    <ClInclude Include="..\..\..\LinearMath\btGeometryUtil.h" />
+    <ClInclude Include="..\..\..\LinearMath\btGrahamScan2dConvexHull.h" />
+    <ClInclude Include="..\..\..\LinearMath\btHashMap.h" />
+    <ClInclude Include="..\..\..\LinearMath\btIDebugDraw.h" />
+    <ClInclude Include="..\..\..\LinearMath\btList.h" />
+    <ClInclude Include="..\..\..\LinearMath\btMatrix3x3.h" />
+    <ClInclude Include="..\..\..\LinearMath\btMatrixX.h" />
+    <ClInclude Include="..\..\..\LinearMath\btMinMax.h" />
+    <ClInclude Include="..\..\..\LinearMath\btMotionState.h" />
+    <ClInclude Include="..\..\..\LinearMath\btPolarDecomposition.h" />
+    <ClInclude Include="..\..\..\LinearMath\btPoolAllocator.h" />
+    <ClInclude Include="..\..\..\LinearMath\btQuadWord.h" />
+    <ClInclude Include="..\..\..\LinearMath\btQuaternion.h" />
+    <ClInclude Include="..\..\..\LinearMath\btQuickprof.h" />
+    <ClInclude Include="..\..\..\LinearMath\btRandom.h" />
+    <ClInclude Include="..\..\..\LinearMath\btScalar.h" />
+    <ClInclude Include="..\..\..\LinearMath\btSerializer.h" />
+    <ClInclude Include="..\..\..\LinearMath\btSpatialAlgebra.h" />
+    <ClInclude Include="..\..\..\LinearMath\btStackAlloc.h" />
+    <ClInclude Include="..\..\..\LinearMath\btThreads.h" />
+    <ClInclude Include="..\..\..\LinearMath\btTransform.h" />
+    <ClInclude Include="..\..\..\LinearMath\btTransformUtil.h" />
+    <ClInclude Include="..\..\..\LinearMath\btVector3.h" />
+    <ClInclude Include="..\..\..\LinearMath\TaskScheduler\btThreadSupportInterface.h">
+      <Filter>TaskScheduler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\LinearMath\btAlignedAllocator.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btConvexHull.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btConvexHullComputer.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btGeometryUtil.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btPolarDecomposition.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btQuickprof.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btSerializer.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btSerializer64.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btThreads.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\btVector3.cpp" />
+    <ClCompile Include="..\..\..\LinearMath\TaskScheduler\btTaskScheduler.cpp">
+      <Filter>TaskScheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinearMath\TaskScheduler\btThreadSupportPosix.cpp">
+      <Filter>TaskScheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinearMath\TaskScheduler\btThreadSupportWin32.cpp">
+      <Filter>TaskScheduler</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -174,7 +174,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEngine.lib;$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEntity.lib;$(SolutionDir)..\..\assimp\build_64bit\code\RelWithDebInfo\assimp-vc140-mt.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletCollision_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\BulletDynamics_RelWithDebugInfo.lib;$(SolutionDir)..\..\bullet3\build_64bit\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;$(SolutionDir)..\..\FreeImage\Dist\x64\FreeImage.lib;$(SolutionDir)..\..\SDL2\VisualC\x64\Release\SDL2.lib;$(SolutionDir)..\..\SDL2_mixer\VisualC\x64\Release\SDL2_mixer.lib;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\lib\angelscript64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEngine.lib;$(SolutionDir)..\..\VS2017\GlPortal\x64\Release\RadixEntity.lib;$(SolutionDir)..\..\assimp\build_64bit\code\RelWithDebInfo\assimp-vc140-mt.lib;$(SolutionDir)..\..\FreeImage\Dist\x64\FreeImage.lib;$(SolutionDir)..\..\SDL2\VisualC\x64\Release\SDL2.lib;$(SolutionDir)..\..\SDL2_mixer\VisualC\x64\Release\SDL2_mixer.lib;$(SolutionDir)..\..\angelscript_2.33.0\angelscript\lib\angelscript64.lib;$(SolutionDir)\x64\Release\LinearMath.lib;$(SolutionDir)\x64\Release\BulletCollision.lib;$(SolutionDir)\x64\Release\BulletDynamics.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
